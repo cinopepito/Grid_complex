@@ -1,0 +1,29 @@
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "yel yel pur"
+    "red green pur"
+    "red sal sal";
+}
+ div:nth-child(1){
+    background: yellow;
+    grid-area: yel;
+}
+div:nth-child(2){
+    background: purple;
+    grid-area: pur;
+}
+div:nth-child(3){
+    background: red;
+    grid-area: red;
+}
+div:nth-child(4){
+    background: green;
+}
+div:nth-child(5){
+    background: salmon;
+    grid-area: sal;
+}
